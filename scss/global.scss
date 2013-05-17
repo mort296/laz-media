@@ -3,7 +3,6 @@ html {
 }
 
 @import "mixin";
-
 @import "header";
 @import "creation-process";
 
@@ -20,7 +19,7 @@ article, aside, canvas, details, embed, a,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	@include transition(all, 0.5s);
+	@include vendor-prefix(transition, all 0.5s);
 }
 
 body {
