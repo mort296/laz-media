@@ -1,19 +1,102 @@
-/* line 3, ../scss/_creation-process.scss */
+/* line 1, ../scss/global.scss */
+html {
+  font-size: 62.5%;
+}
+
+/*
+ * Apply a CSS3 transition
+ *
+ * $property The property you want to animate, eg opacity
+ * $duration The duration of the animation, eg 1s
+ * $ms Include -ms-transition; default is false because IE does not support transitionEnd callback
+ *
+ * @include transition(opacity, 0.5s);
+ */
+/*
+ * Apply a CSS3 transition-delay
+ * @include transitionDelay(2s);
+ */
+/*
+ * Apply a CSS3 transition-duration
+ * @include transitionDuration(1s);
+ */
+/*
+ * Apply a CSS3 transition-property
+ * @include transitionProperty(opacity);
+ * @include transitionProperty((height, width)); Multiple properties can be passed in surrounded by brackets
+ */
+/*
+ * Apply a CSS3 transition-timing-function
+ * @include transitionTimingFunction(easing);
+ */
+/* line 1, ../scss/_header.scss */
+.header {
+  -webkit-box-shadow: 0 1px 5px black ;
+  -moz-box-shadow: 0 1px 5px black ;
+  box-shadow: 0 1px 5px black ;
+  background: url(../img/bg-header.png);
+  height: 55px;
+  position: relative;
+}
+/* line 8, ../scss/_header.scss */
+.header .wrapper {
+  text-align: center;
+}
+/* line 11, ../scss/_header.scss */
+.header .wrapper img {
+  margin-top: 10px;
+}
+/* line 15, ../scss/_header.scss */
+.header .wrapper ul {
+  float: right;
+}
+/* line 19, ../scss/_header.scss */
+.header .wrapper li {
+  display: inline-block;
+}
+/* line 22, ../scss/_header.scss */
+.header .wrapper li .facebook {
+  background: url(../img/sprite-1.png) 0 -27px no-repeat;
+  width: 32px;
+  height: 28px;
+  display: block;
+}
+/* line 28, ../scss/_header.scss */
+.header .wrapper li .facebook:hover {
+  background-position: 0 0;
+}
+/* line 33, ../scss/_header.scss */
+.header .wrapper li .twitter {
+  background: url(../img/sprite-1.png) -33px -27px no-repeat;
+  width: 32px;
+  height: 28px;
+  display: block;
+}
+/* line 39, ../scss/_header.scss */
+.header .wrapper li .twitter:hover {
+  background-position: -33px 0px;
+}
+
+/* line 1, ../scss/_creation-process.scss */
+section.creation-process {
+  background: url(../img/bg-first-section.png);
+}
+/* line 5, ../scss/_creation-process.scss */
 section.creation-process a.hex {
   float: left;
-  margin: 100px 30px;
+  margin: 70px 30px;
   text-decoration: none;
   position: relative;
   width: 110px;
 }
-/* line 10, ../scss/_creation-process.scss */
+/* line 12, ../scss/_creation-process.scss */
 section.creation-process a.hex.bottom {
-  margin-top: 200px;
+  margin-top: 170px;
 }
-/* line 14, ../scss/_creation-process.scss */
+/* line 16, ../scss/_creation-process.scss */
 section.creation-process a.hex span {
   height: 190px;
-  background-color: whitesmoke;
+  background-color: white;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   text-align: center;
@@ -21,19 +104,21 @@ section.creation-process a.hex span {
   border: none;
   color: #fff;
   -webkit-backface-visibility: hidden;
-  -webkit-background-size: auto 220px;
-  -moz-background-size: auto 220px;
-  -o-background-size: auto 220px;
-  background-size: auto 220px;
+  -webkit-background-size: auto 110px;
+  -moz-background-size: auto 110px;
+  -o-background-size: auto 110px;
+  background-size: auto 110px;
 }
-/* line 29, ../scss/_creation-process.scss */
+/* line 31, ../scss/_creation-process.scss */
 section.creation-process a.hex span strong {
-  display: block;
   font-size: 80px;
+  font-size: 8rem;
+  color: black;
+  display: block;
   padding-top: 90px;
   position: relative;
 }
-/* line 36, ../scss/_creation-process.scss */
+/* line 40, ../scss/_creation-process.scss */
 section.creation-process a.hex span div {
   position: absolute;
   height: 100%;
@@ -43,13 +128,13 @@ section.creation-process a.hex span div {
   overflow: hidden;
   background: inherit;
   -webkit-backface-visibility: hidden;
-  -webkit-background-size: auto 220px;
-  -moz-background-size: auto 220px;
-  -o-background-size: auto 220px;
-  background-size: auto 220px;
+  -webkit-background-size: auto 110px;
+  -moz-background-size: auto 110px;
+  -o-background-size: auto 110px;
+  background-size: auto 110px;
   text-align: center;
 }
-/* line 51, ../scss/_creation-process.scss */
+/* line 55, ../scss/_creation-process.scss */
 section.creation-process a.hex span div:before {
   height: 220px;
   width: 220px;
@@ -58,14 +143,14 @@ section.creation-process a.hex span div:before {
   left: 0;
   background: inherit;
 }
-/* line 60, ../scss/_creation-process.scss */
+/* line 64, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
   transform: rotate(60deg);
 }
-/* line 66, ../scss/_creation-process.scss */
+/* line 70, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1:before {
   -webkit-transform: rotate(-60deg) translate(-165px, -15px);
   -moz-transform: rotate(-60deg) translate(-110px, 0);
@@ -78,14 +163,14 @@ section.creation-process a.hex span div.hex-1:before {
   -o-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-/* line 80, ../scss/_creation-process.scss */
+/* line 84, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2 {
   -webkit-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
-/* line 86, ../scss/_creation-process.scss */
+/* line 90, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2:before {
   -webkit-transform: rotate(60deg) translate(-15px, 55px);
   -moz-transform: rotate(60deg) translate(40px, 40px);
@@ -95,7 +180,35 @@ section.creation-process a.hex span div.hex-2:before {
   bottom: 0;
 }
 
-/* line 3, ../scss/global.scss */
+/* line 22, ../scss/global.scss */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, a,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  -webkit-transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+}
+
+/* line 26, ../scss/global.scss */
 body {
   background: #ccc;
+  height: 100%;
+}
+
+/* line 31, ../scss/global.scss */
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
 }

@@ -1,19 +1,21 @@
 section.creation-process {
 
+	background: url(../img/bg-first-section.png);
+
 	a.hex {
 		float: left;
-		margin: 100px 30px;
+		margin: 70px 30px;
 		text-decoration: none;
 		position: relative;
 		width: 110px;
 
 		&.bottom {
-			margin-top: 200px;
+			margin-top: 170px;
 		}
 		
 		span{
 			height: 190px;
-			background-color: whitesmoke;
+			background-color: white;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			text-align: center;
@@ -21,14 +23,16 @@ section.creation-process {
 			border: none;
 			color: #fff;
 			-webkit-backface-visibility: hidden;
-			-webkit-background-size: auto 220px;
-			-moz-background-size: auto 220px;
-			-o-background-size: auto 220px;
-			background-size: auto 220px;
+			-webkit-background-size: auto 110px;
+			-moz-background-size: auto 110px;
+			-o-background-size: auto 110px;
+			background-size: auto 110px;
 
 			strong {
+				@include font-size(80);
+
+				color: black;
 				display: block;
-				font-size: 80px;
 				padding-top: 90px;
 				position: relative;
 			}
@@ -42,10 +46,10 @@ section.creation-process {
 				overflow: hidden;
 				background: inherit;
 				-webkit-backface-visibility: hidden;
-				-webkit-background-size: auto 220px;
-				-moz-background-size: auto 220px;
-				-o-background-size: auto 220px;
-				background-size: auto 220px;
+				-webkit-background-size: auto 110px;
+				-moz-background-size: auto 110px;
+				-o-background-size: auto 110px;
+				background-size: auto 110px;
 				text-align: center;
 
 				&:before {

@@ -1,0 +1,45 @@
+.header {
+	@include box-shadow(0, 1px, 5px, #000);
+	
+	background: url(../img/bg-header.png);
+	height: 55px;
+	position: relative;
+
+	.wrapper {
+		text-align: center;
+
+		img {
+			margin-top: 10px
+		}
+
+		ul {
+			float: right;
+		}
+
+		li {
+			display: inline-block;
+
+			.facebook {
+				background: url(../img/sprite-1.png) 0 -27px no-repeat;
+				width: 32px;
+				height: 28px;
+				display: block;
+
+				&:hover {
+					background-position: 0 0;
+				}
+			}
+
+			.twitter {
+				background: url(../img/sprite-1.png) -33px -27px no-repeat;
+				width: 32px;
+				height: 28px;
+				display: block;
+
+				&:hover {
+					background-position: -33px 0px;
+				}
+			}
+		}
+	}
+}
