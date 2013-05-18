@@ -3,7 +3,7 @@ html {
   font-size: 62.5%;
 }
 
-/* line 1, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 1, ../scss/_header.scss */
 .header {
   -webkit-box-shadow: 0 1px 5px black ;
   -moz-box-shadow: 0 1px 5px black ;
@@ -12,97 +12,79 @@ html {
   height: 55px;
   position: relative;
 }
-/* line 8, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 8, ../scss/_header.scss */
 .header .wrapper {
   text-align: center;
 }
-/* line 11, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 11, ../scss/_header.scss */
 .header .wrapper img {
   margin-top: 10px;
 }
-/* line 15, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 15, ../scss/_header.scss */
 .header .wrapper ul {
   float: right;
 }
-/* line 19, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 19, ../scss/_header.scss */
 .header .wrapper li {
   display: inline-block;
 }
-/* line 22, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 22, ../scss/_header.scss */
 .header .wrapper li .facebook {
   background: url(../img/sprite-1.png) 0 -27px no-repeat;
   width: 32px;
   height: 28px;
   display: block;
 }
-/* line 28, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 28, ../scss/_header.scss */
 .header .wrapper li .facebook:hover {
   background-position: 0 0;
 }
-/* line 33, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 33, ../scss/_header.scss */
 .header .wrapper li .twitter {
   background: url(../img/sprite-1.png) -33px -27px no-repeat;
   width: 32px;
   height: 28px;
   display: block;
 }
-/* line 39, D:/weblocal/w/laz-media/scss/_header.scss */
+/* line 39, ../scss/_header.scss */
 .header .wrapper li .twitter:hover {
   background-position: -33px 0px;
 }
 
-/* line 1, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 1, ../scss/_creation-process.scss */
 section.creation-process {
   background: url(../img/bg-first-section.png);
 }
-/* line 5, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 5, ../scss/_creation-process.scss */
 section.creation-process a.hex {
-  transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  box-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   float: left;
   height: 190px;
   margin: 70px 30px;
   text-decoration: none;
   position: relative;
   width: 110px;
+  		/*&:before {
+  			@include vendor-prefix(transform, rotate(60deg));
+  
+  			box-shadow: 0 0 5px #000;
+  			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  			content: '';
+  			position: absolute;
+  			height: inherit;
+  			width: inherit;
+  		}*/
 }
-/* line 17, D:/weblocal/w/laz-media/scss/_creation-process.scss */
-section.creation-process a.hex:before {
-  transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  box-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  content: '';
-  position: absolute;
-  height: inherit;
-  width: inherit;
-}
-/* line 28, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 28, ../scss/_creation-process.scss */
 section.creation-process a.hex.bottom {
   margin-top: 170px;
 }
-/* line 32, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 32, ../scss/_creation-process.scss */
 section.creation-process a.hex span {
   background-size: auto 130px;
   -webkit-background-size: auto 130px;
   -ms-background-size: auto 130px;
   -moz-background-size: auto 130px;
   -o-background-size: auto 130px;
-  transform: rotate(-60deg);
-  -webkit-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  box-shadow: 0 0 5px #000;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   height: 190px;
   background-color: white;
   background-repeat: no-repeat;
@@ -112,20 +94,20 @@ section.creation-process a.hex span {
   border: none;
   color: #fff;
   -webkit-backface-visibility: hidden;
-  content: '';
+  /*content: '';
   position: absolute;
   height: inherit;
-  width: inherit;
+  width: inherit;*/
 }
-/* line 53, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 53, ../scss/_creation-process.scss */
 section.creation-process a.hex span.partner {
   background-position: 50px;
 }
-/* line 57, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 57, ../scss/_creation-process.scss */
 section.creation-process a.hex span.design {
   background-position: 50px;
 }
-/* line 61, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 61, ../scss/_creation-process.scss */
 section.creation-process a.hex span.calender {
   background-size: auto 85px;
   -webkit-background-size: auto 85px;
@@ -134,19 +116,19 @@ section.creation-process a.hex span.calender {
   -o-background-size: auto 85px;
   background-position: 55% 42%;
 }
-/* line 66, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 66, ../scss/_creation-process.scss */
 section.creation-process a.hex span.developper {
   background-position-y: 65px;
 }
-/* line 69, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 69, ../scss/_creation-process.scss */
 section.creation-process a.hex span.developper div {
   background-position-y: 80px;
 }
-/* line 74, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 74, ../scss/_creation-process.scss */
 section.creation-process a.hex span.strategy {
   background-position: 75% 50%;
 }
-/* line 78, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 78, ../scss/_creation-process.scss */
 section.creation-process a.hex span strong {
   font-size: 55px;
   font-size: 5.5rem;
@@ -156,7 +138,7 @@ section.creation-process a.hex span strong {
   padding: 115px 0 0 70px;
   position: relative;
 }
-/* line 88, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 88, ../scss/_creation-process.scss */
 section.creation-process a.hex span div {
   position: absolute;
   height: 100%;
@@ -168,7 +150,7 @@ section.creation-process a.hex span div {
   -webkit-backface-visibility: hidden;
   text-align: center;
 }
-/* line 100, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 100, ../scss/_creation-process.scss */
 section.creation-process a.hex span div:before {
   height: 220px;
   width: 220px;
@@ -177,7 +159,7 @@ section.creation-process a.hex span div:before {
   left: 0;
   background: inherit;
 }
-/* line 109, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 109, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1 {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
@@ -185,7 +167,7 @@ section.creation-process a.hex span div.hex-1 {
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
 }
-/* line 112, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 112, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1:before {
   transform: rotate(-60deg) translate(-165px, -15px);
   -webkit-transform: rotate(-60deg) translate(-165px, -15px);
@@ -198,7 +180,7 @@ section.creation-process a.hex span div.hex-1:before {
   -moz-transform-origin: 0 0;
   -o-transform-origin: 0 0;
 }
-/* line 118, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 118, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2 {
   transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
@@ -206,7 +188,7 @@ section.creation-process a.hex span div.hex-2 {
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
 }
-/* line 121, D:/weblocal/w/laz-media/scss/_creation-process.scss */
+/* line 121, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2:before {
   transform: rotate(60deg) translate(-15px, 55px);
   -webkit-transform: rotate(60deg) translate(-15px, 55px);
