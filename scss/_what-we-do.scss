@@ -1,0 +1,8 @@
+section.what-we-do {
+    
+    h1 {
+        @include font-size(36);
+
+        color: #494848;
+    }
+}

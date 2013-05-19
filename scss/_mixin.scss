@@ -1,7 +1,19 @@
-@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
-	-webkit-box-shadow:$top $left $blur $color #{$inset};
-	-moz-box-shadow:$top $left $blur $color #{$inset};
-	box-shadow:$top $left $blur $color #{$inset};
+@mixin drop-shadow($top, $left, $blur, $color, $fallback:"", $inset:"") {
+
+  @if $fallback == "" {
+  	-webkit-box-shadow:$top $left $blur $color #{$inset};
+  	-moz-box-shadow:$top $left $blur $color #{$inset};
+  	box-shadow:$top $left $blur $color #{$inset};
+  }
+
+  @else {
+    -webkit-box-shadow:$top $left $blur $fallback #{$inset};
+    -moz-box-shadow:$top $left $blur $fallback #{$inset};
+    box-shadow:$top $left $blur $fallback #{$inset};
+    -webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+  }
 }
 
 @mixin font-size($sizeValue: 16) {

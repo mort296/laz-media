@@ -1,12 +1,20 @@
 section.creation-process {
 
 	background: url(../img/bg-first-section.png);
+
+	&:after {
+		@include drop-shadow(0, 0, 5px, rgba(0, 0, 0, 0.5), #000);
+
+		background: #000;
+		content: '';
+		height: 22px;
+		width: 100%;
+	}
 	
 	a.hex {
-		//@include vendor-prefix(transform, rotate(60deg));
+		@include vendor-prefix(transform, rotate(60deg));
+		@include drop-shadow(0, 0, 5px, rgba(0, 0, 0, 0.5), #000);
 
-		//box-shadow: 0 0 5px #000;
-		//box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 		float: left;
 		height: 190px;
 		margin: 70px 30px;
@@ -14,16 +22,14 @@ section.creation-process {
 		position: relative;
 		width: 110px;
 
-		/*&:before {
+		&:before {
 			@include vendor-prefix(transform, rotate(60deg));
-
-			box-shadow: 0 0 5px #000;
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+			@include drop-shadow(0, 0, 5px, rgba(0, 0, 0, 0.5), #000);
 			content: '';
 			position: absolute;
 			height: inherit;
 			width: inherit;
-		}*/
+		}
 
 		&.bottom {
 			margin-top: 170px;
@@ -31,24 +37,25 @@ section.creation-process {
 		
 		span{
 			@include vendor-prefix(background-size, auto 130px);
-			//@include vendor-prefix(transform, rotate(-60deg));
+			@include vendor-prefix(transform, rotate(-60deg));
+			@include drop-shadow(0, 0, 5px, rgba(0, 0, 0, 0.5), #000);
 
-			//box-shadow: 0 0 5px #000;
-			//box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 			height: 190px;
 			background-color: white;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
+			background-image: none;
 			text-align: center;
 			display: block;
 			border: none;
 			color: #fff;
 			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
 
-			/*content: '';
+			content: '';
 			position: absolute;
 			height: inherit;
-			width: inherit;*/
+			width: inherit;
 
 			&.partner {
 				background-position: 50px;
@@ -95,6 +102,7 @@ section.creation-process {
 				overflow: hidden;
 				background: inherit;
 				-webkit-backface-visibility: hidden;
+				-moz-backface-visibility: hidden;
 				text-align: center;
 
 				&:before {

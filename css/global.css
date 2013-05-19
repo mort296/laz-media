@@ -56,58 +56,103 @@ section.creation-process {
   background: url(../img/bg-first-section.png);
 }
 /* line 5, ../scss/_creation-process.scss */
+section.creation-process:after {
+  -webkit-box-shadow: 0 0 5px black ;
+  -moz-box-shadow: 0 0 5px black ;
+  box-shadow: 0 0 5px black ;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  background: #000;
+  content: '';
+  height: 22px;
+  width: 100%;
+}
+/* line 14, ../scss/_creation-process.scss */
 section.creation-process a.hex {
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -webkit-box-shadow: 0 0 5px black ;
+  -moz-box-shadow: 0 0 5px black ;
+  box-shadow: 0 0 5px black ;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
   float: left;
   height: 190px;
   margin: 70px 30px;
   text-decoration: none;
   position: relative;
   width: 110px;
-  		/*&:before {
-  			@include vendor-prefix(transform, rotate(60deg));
-  
-  			box-shadow: 0 0 5px #000;
-  			box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  			content: '';
-  			position: absolute;
-  			height: inherit;
-  			width: inherit;
-  		}*/
 }
-/* line 28, ../scss/_creation-process.scss */
+/* line 25, ../scss/_creation-process.scss */
+section.creation-process a.hex:before {
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -webkit-box-shadow: 0 0 5px black ;
+  -moz-box-shadow: 0 0 5px black ;
+  box-shadow: 0 0 5px black ;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  content: '';
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+/* line 34, ../scss/_creation-process.scss */
 section.creation-process a.hex.bottom {
   margin-top: 170px;
 }
-/* line 32, ../scss/_creation-process.scss */
+/* line 38, ../scss/_creation-process.scss */
 section.creation-process a.hex span {
   background-size: auto 130px;
   -webkit-background-size: auto 130px;
   -ms-background-size: auto 130px;
   -moz-background-size: auto 130px;
   -o-background-size: auto 130px;
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+  -ms-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  -webkit-box-shadow: 0 0 5px black ;
+  -moz-box-shadow: 0 0 5px black ;
+  box-shadow: 0 0 5px black ;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
   height: 190px;
   background-color: white;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-image: none;
   text-align: center;
   display: block;
   border: none;
   color: #fff;
   -webkit-backface-visibility: hidden;
-  /*content: '';
+  -moz-backface-visibility: hidden;
+  content: '';
   position: absolute;
   height: inherit;
-  width: inherit;*/
+  width: inherit;
 }
-/* line 53, ../scss/_creation-process.scss */
+/* line 60, ../scss/_creation-process.scss */
 section.creation-process a.hex span.partner {
   background-position: 50px;
 }
-/* line 57, ../scss/_creation-process.scss */
+/* line 64, ../scss/_creation-process.scss */
 section.creation-process a.hex span.design {
   background-position: 50px;
 }
-/* line 61, ../scss/_creation-process.scss */
+/* line 68, ../scss/_creation-process.scss */
 section.creation-process a.hex span.calender {
   background-size: auto 85px;
   -webkit-background-size: auto 85px;
@@ -116,19 +161,19 @@ section.creation-process a.hex span.calender {
   -o-background-size: auto 85px;
   background-position: 55% 42%;
 }
-/* line 66, ../scss/_creation-process.scss */
+/* line 73, ../scss/_creation-process.scss */
 section.creation-process a.hex span.developper {
   background-position-y: 65px;
 }
-/* line 69, ../scss/_creation-process.scss */
+/* line 76, ../scss/_creation-process.scss */
 section.creation-process a.hex span.developper div {
   background-position-y: 80px;
 }
-/* line 74, ../scss/_creation-process.scss */
+/* line 81, ../scss/_creation-process.scss */
 section.creation-process a.hex span.strategy {
   background-position: 75% 50%;
 }
-/* line 78, ../scss/_creation-process.scss */
+/* line 85, ../scss/_creation-process.scss */
 section.creation-process a.hex span strong {
   font-size: 55px;
   font-size: 5.5rem;
@@ -138,7 +183,7 @@ section.creation-process a.hex span strong {
   padding: 115px 0 0 70px;
   position: relative;
 }
-/* line 88, ../scss/_creation-process.scss */
+/* line 95, ../scss/_creation-process.scss */
 section.creation-process a.hex span div {
   position: absolute;
   height: 100%;
@@ -148,9 +193,10 @@ section.creation-process a.hex span div {
   overflow: hidden;
   background: inherit;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   text-align: center;
 }
-/* line 100, ../scss/_creation-process.scss */
+/* line 108, ../scss/_creation-process.scss */
 section.creation-process a.hex span div:before {
   height: 220px;
   width: 220px;
@@ -159,7 +205,7 @@ section.creation-process a.hex span div:before {
   left: 0;
   background: inherit;
 }
-/* line 109, ../scss/_creation-process.scss */
+/* line 117, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1 {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
@@ -167,7 +213,7 @@ section.creation-process a.hex span div.hex-1 {
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
 }
-/* line 112, ../scss/_creation-process.scss */
+/* line 120, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1:before {
   transform: rotate(-60deg) translate(-165px, -15px);
   -webkit-transform: rotate(-60deg) translate(-165px, -15px);
@@ -180,7 +226,7 @@ section.creation-process a.hex span div.hex-1:before {
   -moz-transform-origin: 0 0;
   -o-transform-origin: 0 0;
 }
-/* line 118, ../scss/_creation-process.scss */
+/* line 126, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2 {
   transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
@@ -188,7 +234,7 @@ section.creation-process a.hex span div.hex-2 {
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
 }
-/* line 121, ../scss/_creation-process.scss */
+/* line 129, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2:before {
   transform: rotate(60deg) translate(-15px, 55px);
   -webkit-transform: rotate(60deg) translate(-15px, 55px);
@@ -198,7 +244,14 @@ section.creation-process a.hex span div.hex-2:before {
   bottom: 0;
 }
 
-/* line 21, ../scss/global.scss */
+/* line 3, ../scss/_what-we-do.scss */
+section.what-we-do h1 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  color: #494848;
+}
+
+/* line 22, ../scss/global.scss */
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -219,13 +272,13 @@ time, mark, audio, video {
   -o-transition: all 0.5s;
 }
 
-/* line 25, ../scss/global.scss */
+/* line 26, ../scss/global.scss */
 body {
   background: #ccc;
   height: 100%;
 }
 
-/* line 30, ../scss/global.scss */
+/* line 31, ../scss/global.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
