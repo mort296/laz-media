@@ -15,13 +15,19 @@ section.creation-process {
 			@include font-size(48);
 
 			color: #fff;
+			position: absolute;
 			text-align: center;
+			width: 100%;
 		}
 	}
 
 	&:hover .overlay {
 		opacity: 0;
-		-webkit-animation: heightOut 0s 0.3s forwards;
+		-webkit-animation: heightOut 0s 0.5s forwards;
+
+		h1 {
+			-webkit-animation: textOut 0s 0.4s forwards;
+		}
 	}
 
 	&:after {
@@ -162,4 +168,9 @@ section.creation-process {
 @-webkit-keyframes heightOut {
 	from {height: 452px;}
 	to {height: 0;}
+}
+
+@-webkit-keyframes textOut {
+	from {top: 0;}
+	to {top: -2000px;}
 }
