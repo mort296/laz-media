@@ -1,6 +1,5 @@
 .header {
-	@include drop-shadow(0, 1px, 5px, #000);
-	
+	box-shadow: 0 1px 5px #000;
 	background: url(../img/bg-header.png);
 	height: 55px;
 	position: relative;

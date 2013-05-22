@@ -5,48 +5,46 @@ html {
 
 /* line 1, ../scss/_header.scss */
 .header {
-  -webkit-box-shadow: 0 1px 5px black ;
-  -moz-box-shadow: 0 1px 5px black ;
-  box-shadow: 0 1px 5px black ;
+  box-shadow: 0 1px 5px #000;
   background: url(../img/bg-header.png);
   height: 55px;
   position: relative;
 }
-/* line 8, ../scss/_header.scss */
+/* line 7, ../scss/_header.scss */
 .header .wrapper {
   text-align: center;
 }
-/* line 11, ../scss/_header.scss */
+/* line 10, ../scss/_header.scss */
 .header .wrapper img {
   margin-top: 10px;
 }
-/* line 15, ../scss/_header.scss */
+/* line 14, ../scss/_header.scss */
 .header .wrapper ul {
   float: right;
 }
-/* line 19, ../scss/_header.scss */
+/* line 18, ../scss/_header.scss */
 .header .wrapper li {
   display: inline-block;
 }
-/* line 22, ../scss/_header.scss */
+/* line 21, ../scss/_header.scss */
 .header .wrapper li .facebook {
   background: url(../img/sprite-1.png) 0 -27px no-repeat;
   width: 32px;
   height: 28px;
   display: block;
 }
-/* line 28, ../scss/_header.scss */
+/* line 27, ../scss/_header.scss */
 .header .wrapper li .facebook:hover {
   background-position: 0 0;
 }
-/* line 33, ../scss/_header.scss */
+/* line 32, ../scss/_header.scss */
 .header .wrapper li .twitter {
   background: url(../img/sprite-1.png) -33px -27px no-repeat;
   width: 32px;
   height: 28px;
   display: block;
 }
-/* line 39, ../scss/_header.scss */
+/* line 38, ../scss/_header.scss */
 .header .wrapper li .twitter:hover {
   background-position: -33px 0px;
 }
@@ -56,31 +54,43 @@ section.creation-process {
   background: url(../img/bg-first-section.png);
 }
 /* line 5, ../scss/_creation-process.scss */
+section.creation-process .overlay {
+  background-color: #000;
+  height: 452px;
+  line-height: 372px;
+  opacity: 0.75;
+  position: absolute;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 14, ../scss/_creation-process.scss */
+section.creation-process .overlay h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+  color: #fff;
+  text-align: center;
+}
+/* line 22, ../scss/_creation-process.scss */
+section.creation-process:hover .overlay {
+  opacity: 0;
+  -webkit-animation: heightOut 0s 0.3s forwards;
+}
+/* line 27, ../scss/_creation-process.scss */
 section.creation-process:after {
-  -webkit-box-shadow: 0 0 5px black ;
-  -moz-box-shadow: 0 0 5px black ;
-  box-shadow: 0 0 5px black ;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 3px #000;
   background: #000;
   content: '';
   height: 22px;
   width: 100%;
 }
-/* line 14, ../scss/_creation-process.scss */
+/* line 35, ../scss/_creation-process.scss */
 section.creation-process a.hex {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
-  -webkit-box-shadow: 0 0 5px black ;
-  -moz-box-shadow: 0 0 5px black ;
-  box-shadow: 0 0 5px black ;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 3px #000;
   float: left;
   height: 190px;
   margin: 70px 30px;
@@ -88,29 +98,24 @@ section.creation-process a.hex {
   position: relative;
   width: 110px;
 }
-/* line 25, ../scss/_creation-process.scss */
+/* line 46, ../scss/_creation-process.scss */
 section.creation-process a.hex:before {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
-  -webkit-box-shadow: 0 0 5px black ;
-  -moz-box-shadow: 0 0 5px black ;
-  box-shadow: 0 0 5px black ;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 3px #000;
   content: '';
   position: absolute;
   height: inherit;
   width: inherit;
 }
-/* line 34, ../scss/_creation-process.scss */
+/* line 56, ../scss/_creation-process.scss */
 section.creation-process a.hex.bottom {
   margin-top: 170px;
 }
-/* line 38, ../scss/_creation-process.scss */
+/* line 60, ../scss/_creation-process.scss */
 section.creation-process a.hex span {
   background-size: auto 130px;
   -webkit-background-size: auto 130px;
@@ -122,12 +127,7 @@ section.creation-process a.hex span {
   -ms-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
-  -webkit-box-shadow: 0 0 5px black ;
-  -moz-box-shadow: 0 0 5px black ;
-  box-shadow: 0 0 5px black ;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 0 3px #000;
   height: 190px;
   background-color: white;
   background-repeat: no-repeat;
@@ -144,15 +144,15 @@ section.creation-process a.hex span {
   height: inherit;
   width: inherit;
 }
-/* line 60, ../scss/_creation-process.scss */
+/* line 82, ../scss/_creation-process.scss */
 section.creation-process a.hex span.partner {
   background-position: 50px;
 }
-/* line 64, ../scss/_creation-process.scss */
+/* line 86, ../scss/_creation-process.scss */
 section.creation-process a.hex span.design {
   background-position: 50px;
 }
-/* line 68, ../scss/_creation-process.scss */
+/* line 90, ../scss/_creation-process.scss */
 section.creation-process a.hex span.calender {
   background-size: auto 85px;
   -webkit-background-size: auto 85px;
@@ -161,19 +161,19 @@ section.creation-process a.hex span.calender {
   -o-background-size: auto 85px;
   background-position: 55% 42%;
 }
-/* line 73, ../scss/_creation-process.scss */
+/* line 95, ../scss/_creation-process.scss */
 section.creation-process a.hex span.developper {
   background-position-y: 65px;
 }
-/* line 76, ../scss/_creation-process.scss */
+/* line 98, ../scss/_creation-process.scss */
 section.creation-process a.hex span.developper div {
   background-position-y: 80px;
 }
-/* line 81, ../scss/_creation-process.scss */
+/* line 103, ../scss/_creation-process.scss */
 section.creation-process a.hex span.strategy {
   background-position: 75% 50%;
 }
-/* line 85, ../scss/_creation-process.scss */
+/* line 107, ../scss/_creation-process.scss */
 section.creation-process a.hex span strong {
   font-size: 55px;
   font-size: 5.5rem;
@@ -183,7 +183,7 @@ section.creation-process a.hex span strong {
   padding: 115px 0 0 70px;
   position: relative;
 }
-/* line 95, ../scss/_creation-process.scss */
+/* line 117, ../scss/_creation-process.scss */
 section.creation-process a.hex span div {
   position: absolute;
   height: 100%;
@@ -196,7 +196,7 @@ section.creation-process a.hex span div {
   -moz-backface-visibility: hidden;
   text-align: center;
 }
-/* line 108, ../scss/_creation-process.scss */
+/* line 130, ../scss/_creation-process.scss */
 section.creation-process a.hex span div:before {
   height: 220px;
   width: 220px;
@@ -205,7 +205,7 @@ section.creation-process a.hex span div:before {
   left: 0;
   background: inherit;
 }
-/* line 117, ../scss/_creation-process.scss */
+/* line 139, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1 {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
@@ -213,7 +213,7 @@ section.creation-process a.hex span div.hex-1 {
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
 }
-/* line 120, ../scss/_creation-process.scss */
+/* line 142, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-1:before {
   transform: rotate(-60deg) translate(-165px, -15px);
   -webkit-transform: rotate(-60deg) translate(-165px, -15px);
@@ -226,7 +226,7 @@ section.creation-process a.hex span div.hex-1:before {
   -moz-transform-origin: 0 0;
   -o-transform-origin: 0 0;
 }
-/* line 126, ../scss/_creation-process.scss */
+/* line 148, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2 {
   transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
@@ -234,7 +234,7 @@ section.creation-process a.hex span div.hex-2 {
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
 }
-/* line 129, ../scss/_creation-process.scss */
+/* line 151, ../scss/_creation-process.scss */
 section.creation-process a.hex span div.hex-2:before {
   transform: rotate(60deg) translate(-15px, 55px);
   -webkit-transform: rotate(60deg) translate(-15px, 55px);
@@ -244,14 +244,159 @@ section.creation-process a.hex span div.hex-2:before {
   bottom: 0;
 }
 
+@-webkit-keyframes heightOut {
+  /* line 163, ../scss/_creation-process.scss */
+  from {
+    height: 452px;
+  }
+
+  /* line 164, ../scss/_creation-process.scss */
+  to {
+    height: 0;
+  }
+}
+
 /* line 3, ../scss/_what-we-do.scss */
+section.what-we-do .wrapper {
+  max-width: 820px;
+}
+/* line 7, ../scss/_what-we-do.scss */
 section.what-we-do h1 {
   font-size: 36px;
   font-size: 3.6rem;
   color: #494848;
+  text-align: center;
+}
+/* line 14, ../scss/_what-we-do.scss */
+section.what-we-do h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  color: #626262;
+  margin: 50px 0 0;
+}
+/* line 21, ../scss/_what-we-do.scss */
+section.what-we-do p {
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: #7a7a7a;
+  margin-bottom: 50px;
+}
+/* line 28, ../scss/_what-we-do.scss */
+section.what-we-do img.mobile {
+  left: 50%;
+  margin: -30px 0 0 -160px;
+  position: absolute;
+}
+/* line 36, ../scss/_what-we-do.scss */
+section.what-we-do div.mobile h2 {
+  margin-top: 0;
+}
+/* line 40, ../scss/_what-we-do.scss */
+section.what-we-do div.mobile.left, section.what-we-do div.mobile.right {
+  width: 270px;
+}
+/* line 41, ../scss/_what-we-do.scss */
+section.what-we-do div.mobile.left {
+  float: left;
+}
+/* line 42, ../scss/_what-we-do.scss */
+section.what-we-do div.mobile.right {
+  float: right;
+}
+/* line 45, ../scss/_what-we-do.scss */
+section.what-we-do img.comp {
+  float: right;
+  margin: 0 50px;
+}
+/* line 50, ../scss/_what-we-do.scss */
+section.what-we-do img.both {
+  float: left;
 }
 
-/* line 22, ../scss/global.scss */
+/* line 1, ../scss/_make-us-special.scss */
+section.make-us-special {
+  background-color: #f5f5f5;
+}
+/* line 4, ../scss/_make-us-special.scss */
+section.make-us-special .wrapper {
+  max-width: 888px;
+}
+/* line 8, ../scss/_make-us-special.scss */
+section.make-us-special h1 {
+  font-size: 30px;
+  font-size: 3rem;
+  background-color: #686767;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+/* line 19, ../scss/_make-us-special.scss */
+section.make-us-special ul {
+  margin: 55px 0;
+}
+/* line 22, ../scss/_make-us-special.scss */
+section.make-us-special ul li {
+  background-color: #fff;
+  border-top: 4px solid #6cbab3;
+  display: inline-block;
+  width: 33%;
+}
+/* line 28, ../scss/_make-us-special.scss */
+section.make-us-special ul li:first-child {
+  border-color: #fd6e40;
+}
+/* line 32, ../scss/_make-us-special.scss */
+section.make-us-special ul li:last-child {
+  border-color: #f4cd60;
+}
+/* line 36, ../scss/_make-us-special.scss */
+section.make-us-special ul li h2 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  color: #626262;
+  margin: 15px 0 0;
+  text-align: center;
+}
+/* line 44, ../scss/_make-us-special.scss */
+section.make-us-special ul li p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #7a7a7a;
+  margin: 30px 25px;
+}
+/* line 54, ../scss/_make-us-special.scss */
+section.make-us-special:after {
+  background-color: #dfdfdf;
+  content: '';
+  height: 10px;
+  width: 100%;
+}
+
+/* line 3, ../scss/_our-work.scss */
+section.our-work .wrapper {
+  max-width: 920px;
+}
+/* line 7, ../scss/_our-work.scss */
+section.our-work h1 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  color: #4a4949;
+  text-align: center;
+}
+/* line 14, ../scss/_our-work.scss */
+section.our-work button {
+  font-size: 36px;
+  font-size: 3.6rem;
+  background-color: #e0e0e0;
+  border: 2px solid #fff;
+  box-shadow: 0 0 3px #000;
+  height: 65px;
+  width: 100%;
+}
+
+/* line 24, ../scss/global.scss */
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -272,15 +417,20 @@ time, mark, audio, video {
   -o-transition: all 0.5s;
 }
 
-/* line 26, ../scss/global.scss */
+/* line 28, ../scss/global.scss */
+html {
+  font-family: arial, "helvetica", "sans-serif";
+}
+
+/* line 32, ../scss/global.scss */
 body {
-  background: #ccc;
   height: 100%;
 }
 
-/* line 31, ../scss/global.scss */
+/* line 36, ../scss/global.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
+  position: relative;
   width: 100%;
 }

@@ -1,0 +1,23 @@
+section.our-work {
+
+	.wrapper {
+		max-width: 920px;
+	}
+
+	h1 {
+		@include font-size(36);
+
+		color: #4a4949;
+		text-align: center;
+	}
+
+	button {
+		@include font-size(36);
+
+		background-color: #e0e0e0;
+		border: 2px solid #fff;
+		box-shadow: 0 0 3px #000;
+		height: 65px;
+		width: 100%;
+	}
+}

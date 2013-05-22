@@ -6,6 +6,8 @@ html {
 @import "header";
 @import "creation-process";
 @import "what-we-do";
+@import "make-us-special";
+@import "our-work";
 
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,13 +25,17 @@ time, mark, audio, video {
 	@include vendor-prefix(transition, all 0.5s);
 }
 
+html {
+	@include font(arial);
+}
+
 body {
-	background: #ccc;
 	height: 100%;
 }
 
 .wrapper {
 	margin: 0 auto;
 	max-width: 960px;
+	position: relative;
 	width: 100%;
 }
