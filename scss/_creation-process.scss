@@ -2,7 +2,7 @@ section.creation-process {
 
 	background: url(../img/bg-first-section.png);
 
-	.overlay {
+	/*.overlay {
 		background-color: #000;
 		height: 452px;
 		line-height: 372px;
@@ -23,10 +23,14 @@ section.creation-process {
 
 	&:hover .overlay {
 		opacity: 0;
-		-webkit-animation: heightOut 0s 0.5s forwards;
+		visibility: hidden;
+		-webkit-transition: all 0.5s 0.1s;
+		//-webkit-animation: heightOut 0s 0.5s forwards;
 
 		h1 {
-			-webkit-animation: textOut 0s 0.4s forwards;
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: all 0.5s 0.1s;
 		}
 	}
 
@@ -36,20 +40,22 @@ section.creation-process {
 		content: '';
 		height: 22px;
 		width: 100%;
-	}
+		z-index: 5;
+	}*/
 	
 	a.hex {
 		@include vendor-prefix(transform, rotate(60deg));
 
-		box-shadow: 0 0 3px #000;
+		//box-shadow: 0 0 3px #000;
 		float: left;
 		height: 190px;
 		margin: 70px 30px;
 		text-decoration: none;
 		position: relative;
 		width: 110px;
+		z-index: 1;
 
-		&:before {
+		/*&:before {
 			@include vendor-prefix(transform, rotate(60deg));
 
 			box-shadow: 0 0 3px #000;
@@ -57,51 +63,52 @@ section.creation-process {
 			position: absolute;
 			height: inherit;
 			width: inherit;
-		}
+			z-index: 5;
+		}*/
 
 		&.bottom {
 			margin-top: 170px;
 		}
 		
-		span{
-			@include vendor-prefix(background-size, auto 130px);
+		div{
+			@include vendor-prefix(background-size, auto 135px);
 			@include vendor-prefix(transform, rotate(-60deg));
 
-			box-shadow: 0 0 3px #000;
+			//box-shadow: 0 0 3px #000;
 			height: 190px;
 			background-color: white;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			background-image: none;
 			text-align: center;
-			display: block;
 			border: none;
 			color: #fff;
 			-webkit-backface-visibility: hidden;
 			-moz-backface-visibility: hidden;
 
-			content: '';
+			/*content: '';
 			position: absolute;
 			height: inherit;
 			width: inherit;
+			z-index: 6;*/
 
-			&.partner {
+			/*&.partner {
 				background-position: 50px;
 			}
 
 			&.design {
 				background-position: 50px;
-			}
+			}*/
 
 			&.calender {
 				@include vendor-prefix(background-size, auto 85px);
 				 background-position: 55% 42%;
 			}
 
-			&.developper {
+			/*&.developper {
 				background-position-y: 65px;
 
-				div {
+				span {
 					background-position-y: 80px; 
 				}
 			}
@@ -118,9 +125,9 @@ section.creation-process {
 				display: block;
 				padding: 115px 0 0 70px;
 				position: relative;
-			}
+			}*/
 
-			div {
+			span {
 
 				position: absolute;
 				height: 100%;
@@ -143,6 +150,7 @@ section.creation-process {
 				}
 				
 				&.hex-1 {
+					//margin-left: 150px;
 					@include vendor-prefix(transform, rotate(60deg));
 
 					&:before {
@@ -152,12 +160,12 @@ section.creation-process {
 				}
 
 				&.hex-2 {
+					//margin-left: -150px;
 					@include vendor-prefix(transform, rotate(-60deg));
 
 					&:before {
 						@include vendor-prefix(transform, rotate(60deg) translate(-15px, 55px));
 						bottom: 0;
-
 					}
 				}
 			}

@@ -52,114 +52,134 @@ html {
 /* line 1, ../scss/_creation-process.scss */
 section.creation-process {
   background: url(../img/bg-first-section.png);
+  	/*.overlay {
+  		background-color: #000;
+  		height: 452px;
+  		line-height: 372px;
+  		opacity: 0.75;
+  		position: absolute;
+  		vertical-align: middle;
+  		width: 100%;
+  
+  		h1 {
+  			@include font-size(48);
+  
+  			color: #fff;
+  			position: absolute;
+  			text-align: center;
+  			width: 100%;
+  		}
+  	}
+  
+  	&:hover .overlay {
+  		opacity: 0;
+  		visibility: hidden;
+  		-webkit-transition: all 0.5s 0.1s;
+  		//-webkit-animation: heightOut 0s 0.5s forwards;
+  
+  		h1 {
+  			opacity: 0;
+  			visibility: hidden;
+  			-webkit-transition: all 0.5s 0.1s;
+  		}
+  	}
+  
+  	&:after {
+  		box-shadow: 0 0 3px #000;
+  		background: #000;
+  		content: '';
+  		height: 22px;
+  		width: 100%;
+  		z-index: 5;
+  	}*/
 }
-/* line 5, ../scss/_creation-process.scss */
-section.creation-process .overlay {
-  background-color: #000;
-  height: 452px;
-  line-height: 372px;
-  opacity: 0.75;
-  position: absolute;
-  vertical-align: middle;
-  width: 100%;
-}
-/* line 14, ../scss/_creation-process.scss */
-section.creation-process .overlay h1 {
-  font-size: 48px;
-  font-size: 4.8rem;
-  color: #fff;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-/* line 24, ../scss/_creation-process.scss */
-section.creation-process:hover .overlay {
-  opacity: 0;
-  -webkit-animation: heightOut 0s 0.5s forwards;
-}
-/* line 28, ../scss/_creation-process.scss */
-section.creation-process:hover .overlay h1 {
-  -webkit-animation: textOut 0s 0.4s forwards;
-}
-/* line 33, ../scss/_creation-process.scss */
-section.creation-process:after {
-  box-shadow: 0 0 3px #000;
-  background: #000;
-  content: '';
-  height: 22px;
-  width: 100%;
-}
-/* line 41, ../scss/_creation-process.scss */
+/* line 46, ../scss/_creation-process.scss */
 section.creation-process a.hex {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
-  box-shadow: 0 0 3px #000;
   float: left;
   height: 190px;
   margin: 70px 30px;
   text-decoration: none;
   position: relative;
   width: 110px;
+  z-index: 1;
+  		/*&:before {
+  			@include vendor-prefix(transform, rotate(60deg));
+  
+  			box-shadow: 0 0 3px #000;
+  			content: '';
+  			position: absolute;
+  			height: inherit;
+  			width: inherit;
+  			z-index: 5;
+  		}*/
 }
-/* line 52, ../scss/_creation-process.scss */
-section.creation-process a.hex:before {
-  transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
-  box-shadow: 0 0 3px #000;
-  content: '';
-  position: absolute;
-  height: inherit;
-  width: inherit;
-}
-/* line 62, ../scss/_creation-process.scss */
+/* line 69, ../scss/_creation-process.scss */
 section.creation-process a.hex.bottom {
   margin-top: 170px;
 }
-/* line 66, ../scss/_creation-process.scss */
-section.creation-process a.hex span {
-  background-size: auto 130px;
-  -webkit-background-size: auto 130px;
-  -ms-background-size: auto 130px;
-  -moz-background-size: auto 130px;
-  -o-background-size: auto 130px;
+/* line 73, ../scss/_creation-process.scss */
+section.creation-process a.hex div {
+  background-size: auto 135px;
+  -webkit-background-size: auto 135px;
+  -ms-background-size: auto 135px;
+  -moz-background-size: auto 135px;
+  -o-background-size: auto 135px;
   transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
   -ms-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
-  box-shadow: 0 0 3px #000;
   height: 190px;
   background-color: white;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: none;
   text-align: center;
-  display: block;
   border: none;
   color: #fff;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
-  content: '';
+  /*content: '';
   position: absolute;
   height: inherit;
   width: inherit;
+  z-index: 6;*/
+  			/*&.partner {
+  				background-position: 50px;
+  			}
+  
+  			&.design {
+  				background-position: 50px;
+  			}*/
+  			/*&.developper {
+  				background-position-y: 65px;
+  
+  				span {
+  					background-position-y: 80px; 
+  				}
+  			}
+  
+  			&.strategy {
+  				background-position: 75% 50%;
+  			}
+  
+  			strong {
+  				@include font-size(55);
+  				@include font(arial);
+  
+  				color: #403e3e;
+  				display: block;
+  				padding: 115px 0 0 70px;
+  				position: relative;
+  			}*/
 }
-/* line 88, ../scss/_creation-process.scss */
-section.creation-process a.hex span.partner {
-  background-position: 50px;
-}
-/* line 92, ../scss/_creation-process.scss */
-section.creation-process a.hex span.design {
-  background-position: 50px;
-}
-/* line 96, ../scss/_creation-process.scss */
-section.creation-process a.hex span.calender {
+/* line 103, ../scss/_creation-process.scss */
+section.creation-process a.hex div.calender {
   background-size: auto 85px;
   -webkit-background-size: auto 85px;
   -ms-background-size: auto 85px;
@@ -167,30 +187,8 @@ section.creation-process a.hex span.calender {
   -o-background-size: auto 85px;
   background-position: 55% 42%;
 }
-/* line 101, ../scss/_creation-process.scss */
-section.creation-process a.hex span.developper {
-  background-position-y: 65px;
-}
-/* line 104, ../scss/_creation-process.scss */
-section.creation-process a.hex span.developper div {
-  background-position-y: 80px;
-}
-/* line 109, ../scss/_creation-process.scss */
-section.creation-process a.hex span.strategy {
-  background-position: 75% 50%;
-}
-/* line 113, ../scss/_creation-process.scss */
-section.creation-process a.hex span strong {
-  font-size: 55px;
-  font-size: 5.5rem;
-  font-family: arial, "helvetica", "sans-serif";
-  color: #403e3e;
-  display: block;
-  padding: 115px 0 0 70px;
-  position: relative;
-}
-/* line 123, ../scss/_creation-process.scss */
-section.creation-process a.hex span div {
+/* line 130, ../scss/_creation-process.scss */
+section.creation-process a.hex div span {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -202,8 +200,8 @@ section.creation-process a.hex span div {
   -moz-backface-visibility: hidden;
   text-align: center;
 }
-/* line 136, ../scss/_creation-process.scss */
-section.creation-process a.hex span div:before {
+/* line 143, ../scss/_creation-process.scss */
+section.creation-process a.hex div span:before {
   height: 220px;
   width: 220px;
   content: '';
@@ -211,16 +209,16 @@ section.creation-process a.hex span div:before {
   left: 0;
   background: inherit;
 }
-/* line 145, ../scss/_creation-process.scss */
-section.creation-process a.hex span div.hex-1 {
+/* line 152, ../scss/_creation-process.scss */
+section.creation-process a.hex div span.hex-1 {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
 }
-/* line 148, ../scss/_creation-process.scss */
-section.creation-process a.hex span div.hex-1:before {
+/* line 156, ../scss/_creation-process.scss */
+section.creation-process a.hex div span.hex-1:before {
   transform: rotate(-60deg) translate(-165px, -15px);
   -webkit-transform: rotate(-60deg) translate(-165px, -15px);
   -ms-transform: rotate(-60deg) translate(-165px, -15px);
@@ -232,16 +230,16 @@ section.creation-process a.hex span div.hex-1:before {
   -moz-transform-origin: 0 0;
   -o-transform-origin: 0 0;
 }
-/* line 154, ../scss/_creation-process.scss */
-section.creation-process a.hex span div.hex-2 {
+/* line 162, ../scss/_creation-process.scss */
+section.creation-process a.hex div span.hex-2 {
   transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
   -ms-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
 }
-/* line 157, ../scss/_creation-process.scss */
-section.creation-process a.hex span div.hex-2:before {
+/* line 166, ../scss/_creation-process.scss */
+section.creation-process a.hex div span.hex-2:before {
   transform: rotate(60deg) translate(-15px, 55px);
   -webkit-transform: rotate(60deg) translate(-15px, 55px);
   -ms-transform: rotate(60deg) translate(-15px, 55px);
@@ -251,24 +249,24 @@ section.creation-process a.hex span div.hex-2:before {
 }
 
 @-webkit-keyframes heightOut {
-  /* line 169, ../scss/_creation-process.scss */
+  /* line 177, ../scss/_creation-process.scss */
   from {
     height: 452px;
   }
 
-  /* line 170, ../scss/_creation-process.scss */
+  /* line 178, ../scss/_creation-process.scss */
   to {
     height: 0;
   }
 }
 
 @-webkit-keyframes textOut {
-  /* line 174, ../scss/_creation-process.scss */
+  /* line 182, ../scss/_creation-process.scss */
   from {
     top: 0;
   }
 
-  /* line 175, ../scss/_creation-process.scss */
+  /* line 183, ../scss/_creation-process.scss */
   to {
     top: -2000px;
   }
