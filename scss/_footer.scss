@@ -1,0 +1,17 @@
+footer {
+	background: url(../img/bg-footer.png);
+	height: 280px;
+
+	h1 {
+		@include font-size(20);
+
+		border-bottom: 1px solid #fff;
+		color: #b8b8b8;
+		font-weight: normal;
+	}
+
+	input, textarea {
+		background: url(../img/bg-inputs.png);
+		border: none;
+	}
+}

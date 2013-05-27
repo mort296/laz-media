@@ -52,62 +52,88 @@ html {
 /* line 1, ../scss/_creation-process.scss */
 section.creation-process {
   background: url(../img/bg-first-section.png);
-  	/*.overlay {
-  		background-color: #000;
-  		height: 452px;
-  		line-height: 372px;
-  		opacity: 0.75;
-  		position: absolute;
-  		vertical-align: middle;
-  		width: 100%;
-  
-  		h1 {
-  			@include font-size(48);
-  
-  			color: #fff;
-  			position: absolute;
-  			text-align: center;
-  			width: 100%;
-  		}
-  	}
-  
-  	&:hover .overlay {
-  		opacity: 0;
-  		visibility: hidden;
-  		-webkit-transition: all 0.5s 0.1s;
-  		//-webkit-animation: heightOut 0s 0.5s forwards;
-  
-  		h1 {
-  			opacity: 0;
-  			visibility: hidden;
-  			-webkit-transition: all 0.5s 0.1s;
-  		}
-  	}
-  
-  	&:after {
-  		box-shadow: 0 0 3px #000;
-  		background: #000;
-  		content: '';
-  		height: 22px;
-  		width: 100%;
-  		z-index: 5;
-  	}*/
+}
+/* line 5, ../scss/_creation-process.scss */
+section.creation-process .overlay {
+  background-color: #000;
+  height: 452px;
+  line-height: 372px;
+  opacity: 0.75;
+  position: absolute;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 14, ../scss/_creation-process.scss */
+section.creation-process .overlay h1 {
+  font-size: 48px;
+  font-size: 4.8rem;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+/* line 24, ../scss/_creation-process.scss */
+section.creation-process:hover .overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s 0.1s;
+}
+/* line 30, ../scss/_creation-process.scss */
+section.creation-process:hover .overlay h1 {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s 0.1s;
+}
+/* line 37, ../scss/_creation-process.scss */
+section.creation-process:after {
+  box-shadow: 0 0 3px #000;
+  content: '';
+  background: #000;
+  height: 22px;
+  width: 100%;
+  z-index: 5;
 }
 /* line 46, ../scss/_creation-process.scss */
 section.creation-process a.hex {
-  transform: rotate(60deg);
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  -moz-transform: rotate(60deg);
-  -o-transform: rotate(60deg);
+  background-size: auto 135px;
+  -webkit-background-size: auto 135px;
+  -ms-background-size: auto 135px;
+  -moz-background-size: auto 135px;
+  -o-background-size: auto 135px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
   float: left;
   height: 190px;
   margin: 70px 30px;
-  text-decoration: none;
   position: relative;
+  text-decoration: none;
   width: 110px;
-  z-index: 1;
-  		/*&:before {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  	/*a.hex {
+  		@include vendor-prefix(transform, rotate(60deg));
+  
+  		box-shadow: 0 0 3px #000;
+  		float: left;
+  		height: 190px;
+  		margin: 70px 30px;
+  		text-decoration: none;
+  		position: relative;
+  		width: 110px;
+  				-webkit-transition: background 0s;
+  
+  		&:hover {
+  			background: #fff;
+  
+  			span {
+  				background: #fff;
+  
+  			}
+  		}
+  
+  		&:before {
   			@include vendor-prefix(transform, rotate(60deg));
   
   			box-shadow: 0 0 3px #000;
@@ -115,48 +141,48 @@ section.creation-process a.hex {
   			position: absolute;
   			height: inherit;
   			width: inherit;
-  			z-index: 5;
-  		}*/
-}
-/* line 69, ../scss/_creation-process.scss */
-section.creation-process a.hex.bottom {
-  margin-top: 170px;
-}
-/* line 73, ../scss/_creation-process.scss */
-section.creation-process a.hex div {
-  background-size: auto 135px;
-  -webkit-background-size: auto 135px;
-  -ms-background-size: auto 135px;
-  -moz-background-size: auto 135px;
-  -o-background-size: auto 135px;
-  transform: rotate(-60deg);
-  -webkit-transform: rotate(-60deg);
-  -ms-transform: rotate(-60deg);
-  -moz-transform: rotate(-60deg);
-  -o-transform: rotate(-60deg);
-  height: 190px;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: none;
-  text-align: center;
-  border: none;
-  color: #fff;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  /*content: '';
-  position: absolute;
-  height: inherit;
-  width: inherit;
-  z-index: 6;*/
-  			/*&.partner {
+  		}
+  
+  		&.bottom {
+  			margin-top: 170px;
+  		}
+  		
+  		div{
+  			@include vendor-prefix(background-size, auto 135px);
+  			@include vendor-prefix(transform, rotate(-60deg));
+  
+  			box-shadow: 0 0 3px #000;
+  			height: 190px;
+  			background-color: white;
+  			background-repeat: no-repeat;
+  			background-position: 50% 50%;
+  			background-image: none;
+  			text-align: center;
+  			border: none;
+  			color: #fff;
+  			-webkit-backface-visibility: hidden;
+  			-moz-backface-visibility: hidden;
+  
+  			content: '';
+  			position: absolute;
+  			height: inherit;
+  			width: inherit;
+  			z-index: 6;
+  
+  			&.partner {
   				background-position: 50px;
   			}
   
   			&.design {
   				background-position: 50px;
-  			}*/
-  			/*&.developper {
+  			}
+  
+  			&.calender {
+  				@include vendor-prefix(background-size, auto 85px);
+  				 background-position: 55% 42%;
+  			}
+  
+  			&.developper {
   				background-position-y: 65px;
   
   				span {
@@ -176,10 +202,63 @@ section.creation-process a.hex div {
   				display: block;
   				padding: 115px 0 0 70px;
   				position: relative;
-  			}*/
+  			}
+  
+  			span {
+  
+  				-webkit-transition: background 0s;
+  				position: absolute;
+  				height: 100%;
+  				width: 100%;
+  				top: 0;
+  				left: 0;
+  				overflow: hidden;
+  				background: inherit;
+  				-webkit-backface-visibility: hidden;
+  				-moz-backface-visibility: hidden;
+  				text-align: center;
+  
+  				&:before {
+  					height: 220px;
+  					width: 220px;
+  					content: '';
+  					position: absolute;
+  					left: 0;
+  					background: inherit;
+  				}
+  				
+  				&.hex-1 {
+  					//margin-left: 150px;
+  					@include vendor-prefix(transform, rotate(60deg));
+  
+  					&:before {
+  						@include vendor-prefix(transform, rotate(-60deg) translate(-165px, -15px));
+  						@include vendor-prefix(transform-origin, 0 0);
+  					}
+  				}
+  
+  				&.hex-2 {
+  					//margin-left: -150px;
+  					@include vendor-prefix(transform, rotate(-60deg));
+  
+  					&:before {
+  						@include vendor-prefix(transform, rotate(60deg) translate(-15px, 55px));
+  						bottom: 0;
+  					}
+  				}
+  			}
+  		}*/
 }
-/* line 103, ../scss/_creation-process.scss */
-section.creation-process a.hex div.calender {
+/* line 62, ../scss/_creation-process.scss */
+section.creation-process a.hex.partner {
+  background-position: 50px;
+}
+/* line 66, ../scss/_creation-process.scss */
+section.creation-process a.hex.design {
+  background-position: 50px;
+}
+/* line 70, ../scss/_creation-process.scss */
+section.creation-process a.hex.calender {
   background-size: auto 85px;
   -webkit-background-size: auto 85px;
   -ms-background-size: auto 85px;
@@ -187,38 +266,60 @@ section.creation-process a.hex div.calender {
   -o-background-size: auto 85px;
   background-position: 55% 42%;
 }
-/* line 130, ../scss/_creation-process.scss */
-section.creation-process a.hex div span {
+/* line 75, ../scss/_creation-process.scss */
+section.creation-process a.hex.developper {
+  background-position-y: 65px;
+}
+/* line 78, ../scss/_creation-process.scss */
+section.creation-process a.hex.developper span {
+  background-position-y: 80px;
+}
+/* line 83, ../scss/_creation-process.scss */
+section.creation-process a.hex.strategy {
+  background-position: 75% 50%;
+}
+/* line 87, ../scss/_creation-process.scss */
+section.creation-process a.hex strong {
+  font-size: 55px;
+  font-size: 5.5rem;
+  font-family: arial, "helvetica", "sans-serif";
+  color: #403e3e;
+  display: block;
+  padding: 115px 0 0 70px;
+  position: relative;
+}
+/* line 97, ../scss/_creation-process.scss */
+section.creation-process a.hex.bottom {
+  margin-top: 170px;
+}
+/* line 101, ../scss/_creation-process.scss */
+section.creation-process a.hex span {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
   overflow: hidden;
   background: inherit;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
-  text-align: center;
 }
-/* line 143, ../scss/_creation-process.scss */
-section.creation-process a.hex div span:before {
+/* line 110, ../scss/_creation-process.scss */
+section.creation-process a.hex span:before {
   height: 220px;
   width: 220px;
   content: '';
   position: absolute;
-  left: 0;
   background: inherit;
 }
-/* line 152, ../scss/_creation-process.scss */
-section.creation-process a.hex div span.hex-1 {
+/* line 118, ../scss/_creation-process.scss */
+section.creation-process a.hex span.hex-1 {
   transform: rotate(60deg);
   -webkit-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -o-transform: rotate(60deg);
 }
-/* line 156, ../scss/_creation-process.scss */
-section.creation-process a.hex div span.hex-1:before {
+/* line 121, ../scss/_creation-process.scss */
+section.creation-process a.hex span.hex-1:before {
   transform: rotate(-60deg) translate(-165px, -15px);
   -webkit-transform: rotate(-60deg) translate(-165px, -15px);
   -ms-transform: rotate(-60deg) translate(-165px, -15px);
@@ -230,16 +331,16 @@ section.creation-process a.hex div span.hex-1:before {
   -moz-transform-origin: 0 0;
   -o-transform-origin: 0 0;
 }
-/* line 162, ../scss/_creation-process.scss */
-section.creation-process a.hex div span.hex-2 {
+/* line 127, ../scss/_creation-process.scss */
+section.creation-process a.hex span.hex-2 {
   transform: rotate(-60deg);
   -webkit-transform: rotate(-60deg);
   -ms-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
   -o-transform: rotate(-60deg);
 }
-/* line 166, ../scss/_creation-process.scss */
-section.creation-process a.hex div span.hex-2:before {
+/* line 130, ../scss/_creation-process.scss */
+section.creation-process a.hex span.hex-2:before {
   transform: rotate(60deg) translate(-15px, 55px);
   -webkit-transform: rotate(60deg) translate(-15px, 55px);
   -ms-transform: rotate(60deg) translate(-15px, 55px);
@@ -249,24 +350,24 @@ section.creation-process a.hex div span.hex-2:before {
 }
 
 @-webkit-keyframes heightOut {
-  /* line 177, ../scss/_creation-process.scss */
+  /* line 278, ../scss/_creation-process.scss */
   from {
     height: 452px;
   }
 
-  /* line 178, ../scss/_creation-process.scss */
+  /* line 279, ../scss/_creation-process.scss */
   to {
     height: 0;
   }
 }
 
 @-webkit-keyframes textOut {
-  /* line 182, ../scss/_creation-process.scss */
+  /* line 283, ../scss/_creation-process.scss */
   from {
     top: 0;
   }
 
-  /* line 183, ../scss/_creation-process.scss */
+  /* line 284, ../scss/_creation-process.scss */
   to {
     top: -2000px;
   }
@@ -412,7 +513,26 @@ section.our-work button {
   width: 100%;
 }
 
-/* line 24, ../scss/global.scss */
+/* line 1, ../scss/_footer.scss */
+footer {
+  background: url(../img/bg-footer.png);
+  height: 280px;
+}
+/* line 5, ../scss/_footer.scss */
+footer h1 {
+  font-size: 20px;
+  font-size: 2rem;
+  border-bottom: 1px solid #fff;
+  color: #b8b8b8;
+  font-weight: normal;
+}
+/* line 13, ../scss/_footer.scss */
+footer input, footer textarea {
+  background: url(../img/bg-inputs.png);
+  border: none;
+}
+
+/* line 25, ../scss/global.scss */
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -433,17 +553,17 @@ time, mark, audio, video {
   -o-transition: all 0.5s;
 }
 
-/* line 28, ../scss/global.scss */
+/* line 29, ../scss/global.scss */
 html {
   font-family: arial, "helvetica", "sans-serif";
 }
 
-/* line 32, ../scss/global.scss */
+/* line 33, ../scss/global.scss */
 body {
   height: 100%;
 }
 
-/* line 36, ../scss/global.scss */
+/* line 37, ../scss/global.scss */
 .wrapper {
   margin: 0 auto;
   max-width: 960px;
